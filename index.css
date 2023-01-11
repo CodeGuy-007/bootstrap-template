@@ -1,0 +1,138 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container-hero-custom {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.parallax-image {
+  background-image: url("./res/homepage-background.jpg");
+  height: 600px;
+  margin-bottom: 50px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  top: 40%;
+  color: black;
+  text-align: start;
+}
+
+.fw-boldest {
+  font-weight: 800;
+}
+
+.rounded-div {
+  display: block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 2em;
+}
+
+.width-icon {
+  display: inline;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+}
+
+.icon-dim-25 {
+  width: 25;
+  height: 25;
+}
+
+.italic-normal {
+  font-weight: 400;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  /* color: #0d6efd; */
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #0d6efd;
+  transform-origin: bottom left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.hover-underline-animation:hover {
+  color: #0d6efd;
+}
+
+.hover-text-highlight:hover {
+  color: #0d6efd;
+}
+
+.hover-card-highlight-animation{
+    position: relative;
+    display: inline-block;
+}
+
+.hover-card-highlight-animation::after {
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  transform: scaleY(0);
+  bottom: 0;
+  /* left: 0; */
+  background-color: #0d6efd;
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-card-highlight-animation:hover::after{
+    transform: scaleY(1);
+    transform-origin: bottom;
+}
+.technology{
+    font-weight: 600;
+    font-size: small;
+    padding-bottom: 12px;
+}
+.border-radius-0{
+    border-radius: 0%;
+}
+.h-40{
+    height: 1em;
+}
+@media screen and (max-width: 576px){
+  .hide-on-xs{
+    display: none;
+  }
+}
+@media screen and (min-width: 577px){
+  .hide-on-xs{
+    display: flex;
+  }
+  
+}
